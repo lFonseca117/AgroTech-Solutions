@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgroTech Solutions - Monitoreo Inteligente de Cultivos</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Menú principal">
             <div class="nav-brand">
-                <div class="logo">🌱</div>
+                <div class="logo" role="img" aria-label="Planta">🌱</div>
                 <span class="brand-text">AgroTech Solutions</span>
             </div>
             <ul class="nav-menu">
@@ -22,7 +25,15 @@
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <div class="nav-toggle">☰</div>
+            <button
+                class="nav-toggle"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                type="button"
+            >
+                ☰
+            </button>
         </nav>
     </header>
 
@@ -31,8 +42,8 @@
             <div class="hero-text">
                 <h1 class="hero-title">Monitoreo Inteligente de Cultivos con IoT</h1>
                 <p class="hero-description">
-                    Optimiza tu producción agrícola con sensores avanzados que monitorean humedad, 
-                    temperatura y pH del suelo en tiempo real. Toma decisiones informadas y 
+                    Optimiza tu producción agrícola con sensores avanzados que monitorean humedad,
+                    temperatura y pH del suelo en tiempo real. Toma decisiones informadas y
                     maximiza el rendimiento de tus cultivos.
                 </p>
                 <div class="hero-buttons">
@@ -43,21 +54,21 @@
             <div class="hero-image">
                 <div class="dashboard-preview">
                     <div class="sensor-card">
-                        <div class="sensor-icon">🌡️</div>
+                        <div class="sensor-icon" aria-hidden="true">🌡️</div>
                         <div class="sensor-data">
                             <span class="sensor-label">Temperatura</span>
                             <span class="sensor-value">24°C</span>
                         </div>
                     </div>
                     <div class="sensor-card">
-                        <div class="sensor-icon">💧</div>
+                        <div class="sensor-icon" aria-hidden="true">💧</div>
                         <div class="sensor-data">
                             <span class="sensor-label">Humedad</span>
                             <span class="sensor-value">68%</span>
                         </div>
                     </div>
                     <div class="sensor-card">
-                        <div class="sensor-icon">⚗️</div>
+                        <div class="sensor-icon" aria-hidden="true">⚗️</div>
                         <div class="sensor-data">
                             <span class="sensor-label">pH</span>
                             <span class="sensor-value">6.8</span>
@@ -73,32 +84,44 @@
             <h2 class="section-title">Características del Sistema</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🔐</div>
+                    <div class="feature-icon" aria-hidden="true">🔐</div>
                     <h3>Autenticación Segura</h3>
-                    <p>Sistema de login seguro con roles de usuario diferenciados para administradores y operadores.</p>
+                    <p>
+                        Sistema de login seguro con roles de usuario diferenciados para administradores y
+                        operadores.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon" aria-hidden="true">📊</div>
                     <h3>Monitoreo en Tiempo Real</h3>
-                    <p>Visualización instantánea de datos de sensores con gráficos interactivos y actualizaciones automáticas.</p>
+                    <p>
+                        Visualización instantánea de datos de sensores con gráficos interactivos y
+                        actualizaciones automáticas.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🚨</div>
+                    <div class="feature-icon" aria-hidden="true">🚨</div>
                     <h3>Alertas Automáticas</h3>
                     <p>Notificaciones por email y SMS cuando los valores críticos son superados.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📈</div>
+                    <div class="feature-icon" aria-hidden="true">📈</div>
                     <h3>Reportes Históricos</h3>
-                    <p>Análisis de tendencias y reportes detallados para optimizar el rendimiento de cultivos.</p>
+                    <p>
+                        Análisis de tendencias y reportes detallados para optimizar el rendimiento de
+                        cultivos.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
+                    <div class="feature-icon" aria-hidden="true">⚙️</div>
                     <h3>Gestión de Sensores</h3>
-                    <p>Administración completa de sensores IoT con configuración remota y mantenimiento predictivo.</p>
+                    <p>
+                        Administración completa de sensores IoT con configuración remota y mantenimiento
+                        predictivo.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">👥</div>
+                    <div class="feature-icon" aria-hidden="true">👥</div>
                     <h3>Multiusuario</h3>
                     <p>Soporte para múltiples usuarios con permisos personalizados y acceso controlado.</p>
                 </div>
@@ -179,21 +202,21 @@
                     <h3>Métricas Actuales</h3>
                     <div class="metrics-grid">
                         <div class="metric">
-                            <div class="metric-icon">🌡️</div>
+                            <div class="metric-icon" aria-hidden="true">🌡️</div>
                             <div class="metric-info">
                                 <span class="metric-label">Temperatura Promedio</span>
                                 <span class="metric-value">24.5°C</span>
                             </div>
                         </div>
                         <div class="metric">
-                            <div class="metric-icon">💧</div>
+                            <div class="metric-icon" aria-hidden="true">💧</div>
                             <div class="metric-info">
                                 <span class="metric-label">Humedad Promedio</span>
                                 <span class="metric-value">67.2%</span>
                             </div>
                         </div>
                         <div class="metric">
-                            <div class="metric-icon">⚗️</div>
+                            <div class="metric-icon" aria-hidden="true">⚗️</div>
                             <div class="metric-info">
                                 <span class="metric-label">pH Promedio</span>
                                 <span class="metric-value">6.9</span>
@@ -201,8 +224,10 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- Cierra dashboard-grid -->
-        </div> <!-- Cierra container -->
+            </div>
+            <!-- Cierra dashboard-grid -->
+        </div>
+        <!-- Cierra container -->
     </section>
 
     <section class="alerts">
@@ -212,16 +237,35 @@
                 <div class="alert-config">
                     <h3>Configuración de Alertas</h3>
                     <div class="config-item">
-                        <label>Temperatura máxima (°C):</label>
-                        <input type="number" value="30" id="tempMax" placeholder="Ingrese temperatura máxima" title="Temperatura máxima">
+                        <label for="tempMax">Temperatura máxima (°C):</label>
+                        <input
+                            type="number"
+                            value="30"
+                            id="tempMax"
+                            placeholder="Ingrese temperatura máxima"
+                            title="Temperatura máxima"
+                        />
                     </div>
                     <div class="config-item">
-                        <label>Humedad mínima (%):</label>
-                        <input type="number" value="40" id="humidityMin" placeholder="Ingrese humedad mínima" title="Humedad mínima">
+                        <label for="humidityMin">Humedad mínima (%):</label>
+                        <input
+                            type="number"
+                            value="40"
+                            id="humidityMin"
+                            placeholder="Ingrese humedad mínima"
+                            title="Humedad mínima"
+                        />
                     </div>
                     <div class="config-item">
-                        <label>pH mínimo:</label>
-                        <input type="number" value="6.0" step="0.1" id="phMin" placeholder="Ingrese pH mínimo" title="pH mínimo">
+                        <label for="phMin">pH mínimo:</label>
+                        <input
+                            type="number"
+                            value="6.0"
+                            step="0.1"
+                            id="phMin"
+                            placeholder="Ingrese pH mínimo"
+                            title="pH mínimo"
+                        />
                     </div>
                     <button class="btn-primary btn-disabled" disabled>Simular Alerta (Demo)</button>
                 </div>
@@ -229,26 +273,32 @@
                     <h3>Alertas Recientes</h3>
                     <div class="alert-list">
                         <div class="alert-item warning">
-                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-icon" aria-hidden="true">⚠️</div>
                             <div class="alert-content">
                                 <div class="alert-title">Temperatura Alta</div>
-                                <div class="alert-message">Sensor Campo A1: 32°C (Límite: 30°C)</div>
+                                <div class="alert-message">
+                                    Sensor Campo A1: 32°C (Límite: 30°C)
+                                </div>
                                 <div class="alert-time">Hace 5 minutos</div>
                             </div>
                         </div>
                         <div class="alert-item critical">
-                            <div class="alert-icon">🚨</div>
+                            <div class="alert-icon" aria-hidden="true">🚨</div>
                             <div class="alert-content">
                                 <div class="alert-title">Humedad Crítica</div>
-                                <div class="alert-message">Sensor Campo B2: 25% (Límite: 40%)</div>
+                                <div class="alert-message">
+                                    Sensor Campo B2: 25% (Límite: 40%)
+                                </div>
                                 <div class="alert-time">Hace 15 minutos</div>
                             </div>
                         </div>
                         <div class="alert-item info">
-                            <div class="alert-icon">📧</div>
+                            <div class="alert-icon" aria-hidden="true">📧</div>
                             <div class="alert-content">
                                 <div class="alert-title">Email Enviado</div>
-                                <div class="alert-message">Notificación enviada a admin@agrotech.com</div>
+                                <div class="alert-message">
+                                    Notificación enviada a admin@agrotech.com
+                                </div>
                                 <div class="alert-time">Hace 16 minutos</div>
                             </div>
                         </div>
@@ -263,7 +313,10 @@
                     <div class="notification-body">
                         <p><strong>Para:</strong> Nadia@agrotech.com</p>
                         <p><strong>Asunto:</strong> Alerta Crítica - Sensor Campo B2</p>
-                        <p><strong>Mensaje:</strong> Se ha detectado humedad crítica (25%) en el Campo B2. Se requiere riego inmediato.</p>
+                        <p>
+                            <strong>Mensaje:</strong> Se ha detectado humedad crítica (25%) en el Campo B2.
+                            Se requiere riego inmediato.
+                        </p>
                         <p><strong>Enviado:</strong> Automáticamente por el sistema IoT</p>
                     </div>
                 </div>
@@ -276,10 +329,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <div class="logo">🌱</div>
+                        <div class="logo" role="img" aria-label="Planta">🌱</div>
                         <span class="brand-text">AgroTech Solutions</span>
                     </div>
-                    <p>Revolucionando la agricultura con tecnología IoT avanzada para un futuro más sostenible.</p>
+                    <p>
+                        Revolucionando la agricultura con tecnología IoT avanzada para un futuro más
+                        sostenible.
+                    </p>
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
@@ -300,9 +356,9 @@
                     <h4>Información</h4>
                     <ul>
                         <li>Laura Sofía Fonseca Urrea</li>
-                        <li>Ficha: 3203082</li> 
+                        <li>Ficha: 3203082</li>
                         <li>Instructor: Leonardo Rojas</li>
-                        <li>Servicio Nacional de Aprendizaje  SENA</li>
+                        <li>Servicio Nacional de Aprendizaje SENA</li>
                     </ul>
                 </div>
             </div>
